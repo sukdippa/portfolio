@@ -9,8 +9,13 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        text: "var(--text)",
+        accent: "var(--accent)"
       },
+      fontFamily: {
+        header: "var(--font-header)",
+        primary: "var(--font-bodytext)"
+      }
     },
   },
   plugins: [],
