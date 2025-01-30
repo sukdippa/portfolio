@@ -1,5 +1,5 @@
-import {Poppins} from 'next/font/google'
-import {Lexend} from 'next/font/google'
+import { Poppins } from 'next/font/google'
+import { Lexend } from 'next/font/google'
 
 
 const bodytext = Poppins({
@@ -18,10 +18,9 @@ const header1 = Lexend({
 
 })
 
-const fonts = ({
-    bodytext,
-    header1,
-    className: `${bodytext.variable} ${header1.variable}`,
+const fontVariables = [
+    bodytext.variable,
+    header1.variable
+].join(' ');
 
-})
-export default {fonts}
+export default fontVariables;

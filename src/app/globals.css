@@ -7,14 +7,13 @@
     --background: #ffffff;
     --text: #171717;
     --accent: #25abcb;
-    --font-bodytext: 'Poppins', sans-serif;
-    --font-header: 'Lexend', sans-serif;
   }
 
   body {
     padding: 20px 20px 60px;
     max-width: 680px;
     margin: 0 auto;
+    @apply font-primary
   }
 
   h1 {

@@ -1,11 +1,11 @@
-import fonts from "@/utils/font";
+import fontVariables from "@/utils/font";
 import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className = {`${fonts.bodytext} antialiased`}
+        className = {`${fontVariables} antialiased`}
       >
         {children}
       </body>
