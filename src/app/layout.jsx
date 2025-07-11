@@ -1,15 +1,29 @@
-import fontVariables from "@/utils/font";
+import fontVariables from "../utils/font";
+import Navbar from "../components/Navbar";
 import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className = {`${fontVariables} antialiased`}
-      >
+      <body className={`${fontVariables} antialiased`}>
+        <Navbar />
         {children}
+        <div className="flex flex-col h-48 items-center justify-center">
+          <p className="text-center text-gray-500 text-xs">
+            © 2025 Sophie Shu. All rights reserved.
+          </p>
+        </div>
+        <div className="flex items-end justify-end h-16 fixed bottom-0 right-4 group">
+          <div className="h-full w-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 origin-bottom-right">
+            hello
+          </div>
+          <img
+            src="/duck.png"
+            className="h-full w-auto opacity-100 transition duration-300 hover:scale-105 origin-bottom-right"
+          />
+        </div>
       </body>
     </html>
   );
-} 
+}
 

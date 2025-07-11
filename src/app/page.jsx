@@ -1,18 +1,34 @@
 import Image from "next/image";
+import Card from '../components/Card';
 
 export default function Home() {
   return (
-    <main>
-      <h1> </h1>
-      <Image
-        src="/traction.png"
-        alt='traction'
-        width={1000}
-        height={300}
-        className="mx-auto"
-      />
-      <h1>Traction Aquatics</h1>
-      <p>Traction Aquatics is a world-renowned watersports club based in Munich, Germany. Since 1982, the club has produced over 100 world class athletes, including 2-time Olympic gold medalist Erika Meyer. Meyer’s rigorous training regimes were driven by top-notch technologies in Traction, and have set a precedent for aquatic clubs around the world. Traction also boasts a large research facility at the University of Munich, where athletes’ performance statistics are analyzed by Europe’s leading kinesiologists.</p>
+    <main className="flex flex-col justify-center items-center h-[35rem]">
+      <div className="w-[30rem] h-[40rem] flex flex-col justify-center items-center text-center mx-auto">
+        <h1>Hi, I'm Sophie.</h1>
+          <p>
+            I’m a designer and developer with a versatile skillset 
+            and strong ability to adapt to new environments.
+          </p>
+          <p>
+            talk to me
+          </p>
+      </div>
+      <div className='flex flex-row'>
+        <Card 
+          title="Chinese on Ice" 
+          description="
+            I curated the thirteenth instalment for figure skaters 
+            of Chinese heritage. I was awarded the Diversity Merit 
+            for this project." 
+          image="/1-forest.png"
+          tag1="Marketing"
+          tag2="Strategy"
+          tag3="Media Arts"
+          />
+          
+        <Card />
+      </div>
     </main>
   );
 }

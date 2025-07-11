@@ -10,18 +10,29 @@
   }
 
   body {
-    padding: 20px 20px 60px;
-    max-width: 680px;
+    @apply font-primary bg-background text-text;
     margin: 0 auto;
-    @apply font-primary
+    letter-spacing: -0.05em;
+  }
+
+  main {
+    @apply flex flex-col;
+    letter-spacing: -0.05em;
+    max-width: 75%;
+    margin: 0 auto;
   }
 
   h1 {
-    padding: 80px 0px 20px;
-    font-size: 18pt;
-    color: var(--accent);
-    @apply font-header
+    @apply font-header text-4xl my-4 text-text;
+    font-weight: 700;
   }
-  
-} 
- 
+
+  h2 {
+    @apply font-header text-xl mt-6 text-accent;
+  }
+
+  p {
+    @apply font-primary;
+    font-weight: 300;
+  }
+}
