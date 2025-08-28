@@ -3,7 +3,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="min-h-full">
-        <nav className="bg-white">
+        <nav>
           <div className="max-w-7xl px-4">
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
@@ -11,14 +11,14 @@ const Navbar = () => {
                   <img className="size-8" src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"></img>
                 </div>
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <Link href="/" className="rounded-md bg-gray-200 px-3 py-2 text-sm text-black hover:bg-gray-300" aria-current="page">Home</Link>
-                  <Link href="/projects" className="rounded-md px-3 py-2 text-sm text-black hover:bg-gray-100">
-                    Projects
+                  <Link href="/" className="rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)]" aria-current="page">Home</Link>
+                  <Link href="/work" className="rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)]">
+                    Work
                   </Link>
-                  <Link href="/design" className="rounded-md px-3 py-2 text-sm text-black hover:bg-gray-100">
-                    Design
+                  <Link href="/gallery" className="rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)]">
+                    Gallery
                   </Link>
-                  <Link href="/orb" className="rounded-md px-3 py-2 text-sm text-black hover:bg-gray-100">
+                  <Link href="/orb" className="rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)]">
                     Orb
                   </Link>
                 </div>
