@@ -12,39 +12,44 @@ export default function Work () {
       </div>
       <div className='flex flex-row'>
         <Card 
+          title="Luna AI" 
+          description="
+            As a founding engineer and UX/UI designer, I contributed 
+            to the development of Luna AI, a proactively intelligent 
+            AI companion with humanlike memory and assistance features." 
+          image="/luna/cover.jpg"
+          tag1="Marketing"
+          tag2="Strategy"
+          tag3="Media Arts"
+        />
+        <Card 
           title="Toronto Model United Nations" 
           description="
             As Media Secretariat, I designed all branding and
             marketing materials, impacting over 600 delegates and staff." 
-          image="/1-forest.png"
+          image="/tmun/tmun.gif"
           tag1="Graphic Design"
           tag2="Management"
+          link="/work/tmun"
         />
+      </div>
+      <div className='flex flex-row'>
         <Card 
           title="Paceful: Productivity App" 
           description="
             Designed the UI/UX and motion graphics for a productivity app
             that helps users manage their time and tasks effectively." 
-          image="/2-valley.png"
+          image="/paceful/thumbnail.png"
           tag1="Motion Graphics"
           tag2="After Effects"
-        />
-      </div>
-      <div className='flex flex-row'>
-        <Card 
-          title="Highlights from High School" 
-          description="
-            As Media Secretariat, I designed the branding and
-            marketing materials, impacting over 600 delegates and staff." 
-          image="/3-river.png"
-          tag1="Graphic Design"
-          tag2="Management"
+          tag3="Branding"
         />
         <Card 
-          title="Apparel Design" 
+          title="Blueprint: Adobe Express Typography Add-on" 
           description="
-            Designed and illustrated apparel for ." 
-          image="/4-foggy.png"
+            As a submission for Adobe’s Adobe Express Add-ons Hackathon, 
+            I developed an add-on which makes typography and styling more efficient." 
+          image="/blueprint/blueprint.png"
           tag1="Graphic Design"
           tag2="Management"
         />

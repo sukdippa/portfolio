@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Card from '../components/Card';
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,11 +22,11 @@ export default function Home() {
             As a founding engineer and UX/UI designer, I contributed 
             to the development of Luna AI, a proactively intelligent 
             AI companion with humanlike memory and assistance features." 
-          image="/1-forest.png"
+          image="/luna/cover.jpg"
           tag1="Marketing"
           tag2="Strategy"
           tag3="Media Arts"
-          />
+        />
           
         <Card 
           title="Toronto Model United Nations" 
@@ -33,10 +34,10 @@ export default function Home() {
             I curated the thirteenth instalment for figure skaters 
             of Chinese heritage. I was awarded the Diversity Merit 
             for this project." 
-          image="/tmun.gif"
-          tag1="Marketing"
-          tag2="Strategy"
-          tag3="Media Arts"
+          image="/tmun/tmun.gif"
+          tag1="Graphic Design"
+          tag2="Management"
+          link="/work/tmun"
           />
       </div>
     </main>

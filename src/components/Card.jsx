@@ -1,11 +1,15 @@
+import { on } from "events";
 import Tag from "../components/Tag";
+import Link from "next/link";
 
-const Card = ({ title, description, image, tag1, tag2, tag3, tag4 }) => {
+const Card = ({ title, description, image, tag1, tag2, tag3, tag4, link }) => {
     return (
-        <div className="relative group flex flex-col max-w-[40rem] w-full rounded-3xl bg-[rgba(252,252,254,0.1)] border border-[rgba(238,245,248,1)] m-4 p-5 gap-4"
-            style={{ boxShadow: "0px 45px 57px -25px rgba(83, 98, 115, 0.3)" }}>
+        <Link className="relative group flex flex-col max-w-[40rem] w-full rounded-3xl bg-[rgba(252,252,254,0.1)] border border-[rgba(238,245,248,1)] m-4 p-5 gap-4"
+            style={{ boxShadow: "0px 45px 57px -25px rgba(83, 98, 115, 0.3)" }}
+            href={link ? link : '#'}
+            >
             <div className="aspect-[3/2] md:w-auto w-full">
-                <img src={image} alt="forest" className="w-full h-full rounded-lg object-cover" />
+                <img src={image} alt={`Image of ${title}`} className="w-full h-full rounded-lg object-cover" />
             </div>
             <div className="flex flex-col justify-start items-start min-w-[12rem]">
                 <div>
@@ -24,8 +28,7 @@ const Card = ({ title, description, image, tag1, tag2, tag3, tag4 }) => {
                 </div>
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-0 rounded-3xl pointer-events-none transition duration-300 group-hover:bg-opacity-5"></div>
-        </div>
-        
+        </Link>
     );
 };
 export default Card;
