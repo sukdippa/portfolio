@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Card = ({ title, description, image, tag1, tag2, tag3, tag4, link }) => {
     return (
-        <Link className="relative group flex flex-col max-w-[40rem] w-full rounded-3xl bg-[rgba(252,252,254,0.1)] border border-[rgba(238,245,248,1)] m-4 p-5 gap-4"
+        <Link className="relative group flex flex-col max-w-[40rem] w-full rounded-3xl bg-[rgba(252,252,254,0.1)] border border-border m-4 p-5 gap-4 overflow-hidden"
             style={{ boxShadow: "0px 45px 57px -25px rgba(83, 98, 115, 0.3)" }}
             href={link ? link : '#'}
             >
@@ -27,7 +27,7 @@ const Card = ({ title, description, image, tag1, tag2, tag3, tag4, link }) => {
                     {tag4 && <Tag label={tag4} />}
                 </div>
             </div>
-            <div className="absolute inset-0 bg-black bg-opacity-0 rounded-3xl pointer-events-none transition duration-300 group-hover:bg-opacity-5"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-0 pointer-events-none transition duration-300 group-hover:bg-opacity-5"></div>
         </Link>
     );
 };

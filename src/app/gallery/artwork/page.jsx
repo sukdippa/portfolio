@@ -10,7 +10,7 @@ export default function Artwork () {
           </p>
       </div>
       <Pic image="/artwork/tavern.jpg" text={`"Welcome to Hell's Tavern". 2023 Photoshop`} />
-      
+      <Pic image="/artwork/civilizations.png" text='"Civilizations". 2024 Photoshop' />
       <Pic image="/artwork/clouds.jpg" text='"Dance Amid the Clouds". 2024 Photoshop' />
       <div className="flex flex-row gap-8">
         <Pic image="/artwork/harvest.jpg" text='"Harvest". 2024 Photoshop' />

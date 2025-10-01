@@ -18,9 +18,6 @@ const Navbar = () => {
                   <Link href="/gallery" className="rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)]">
                     Gallery
                   </Link>
-                  <Link href="/orb" className="rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)]">
-                    Orb
-                  </Link>
                 </div>
               </div>
             </div>

@@ -5,12 +5,14 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         text: "var(--text)",
-        accent: "var(--accent)"
+        accent: "var(--accent)",
+        border: "var(--border)"
       },
       fontFamily: {
         header: "var(--font-header)",

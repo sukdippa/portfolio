@@ -7,6 +7,14 @@
     --background: #ffffff;
     --text: #171717;
     --accent: #25abcb;
+    --border: #eef5f8;
+  }
+
+  .dark {
+    --background: #191a1d00;
+    --text: #eeeeee;
+    --accent: #25abcb;
+    --border: #7e838977;
   }
 
   body {
@@ -39,4 +47,22 @@
     @apply font-primary;
     font-weight: 300;
   }
+}
+
+/* Gradient Circle Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 2s ease-out 0.5s forwards;
+  opacity: 0;
 }

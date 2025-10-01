@@ -14,7 +14,7 @@ export default function Gallery () {
           title="Artwork" 
           description="
             Drawing since kindergarten. From scribbles to worlds." 
-          image="/artwork/civilizations.png"
+          image="/artwork/tavern.jpg"
           tag1="Photoshop"
           tag2="Blender"
           link="/gallery/artwork"

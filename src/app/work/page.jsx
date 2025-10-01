@@ -18,6 +18,7 @@ export default function Work () {
             to the development of Luna AI, a proactively intelligent 
             AI companion with humanlike memory and assistance features." 
           image="/luna/cover.jpg"
+          link='/work/luna'
           tag1="Marketing"
           tag2="Strategy"
           tag3="Media Arts"
