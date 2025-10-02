@@ -1,14 +1,10 @@
 import Card from '../../components/Card';
+import Header from '../../components/Header';
 
 export default function Gallery () {
   return (
-    <main className="flex flex-col justify-center items-center] gap-12">
-      <div className="max-w-[30rem] h-[18rem] flex flex-col justify-center items-center text-center mx-auto">
-        <h1>Gallery</h1>
-          <p>
-            Gallery of artwork and photography, my favorite hobbies.
-          </p>
-      </div>
+    <main className="">
+      <Header title="Gallery" description="Gallery of artwork and photography, my favorite hobbies." />
       <div className='flex flex-row'>
         <Card 
           title="Artwork" 

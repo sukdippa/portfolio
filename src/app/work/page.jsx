@@ -1,36 +1,36 @@
 import Card from '../../components/Card';
+import Header from '../../components/Header';
 
 
 export default function Work () {
   return (
-    <main className="flex flex-col justify-center items-center] gap-12">
-      <div className="max-w-[30rem] h-[24rem] flex flex-col justify-center items-center text-center mx-auto">
-        <h1>Design</h1>
-          <p>
-            My design works over the years.
-          </p>
-      </div>
+    <main>
+      <Header title="Design" description="My design works over the years." />
       <div className='flex flex-row'>
         <Card 
           title="Luna AI" 
           description="
             As a founding engineer and UX/UI designer, I contributed 
             to the development of Luna AI, a proactively intelligent 
-            AI companion with humanlike memory and assistance features." 
+            AI companion with humanlike memory and assistance features.
+            I developed the branding and promotional video." 
           image="/luna/cover.jpg"
+          tag1="UX design"
+          tag2="HTML/CSS"
+          tag3="Motion Graphics"
+          tag4="AI/ML"
           link='/work/luna'
-          tag1="Marketing"
-          tag2="Strategy"
-          tag3="Media Arts"
         />
         <Card 
           title="Toronto Model United Nations" 
           description="
             As Media Secretariat, I designed all branding and
-            marketing materials, impacting over 600 delegates and staff." 
+            marketing materials, impacting over 600 delegates and staff.
+            I designed 15 committee posters, social media posts, and video trailers." 
           image="/tmun/tmun.gif"
           tag1="Graphic Design"
-          tag2="Management"
+          tag2="Motion Graphics"
+          tag3="Photo/Videography"
           link="/work/tmun"
         />
       </div>
@@ -44,6 +44,7 @@ export default function Work () {
           tag1="Motion Graphics"
           tag2="After Effects"
           tag3="Branding"
+          link="/work/paceful"
         />
         <Card 
           title="Blueprint: Adobe Express Typography Add-on" 
@@ -53,6 +54,7 @@ export default function Work () {
           image="/blueprint/blueprint.png"
           tag1="Graphic Design"
           tag2="Management"
+          link="/work/blueprint"
         />
       </div>
     </main>

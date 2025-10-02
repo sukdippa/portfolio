@@ -1,0 +1,107 @@
+import React from "react";
+
+export default function TMUN() {
+  return (
+    <div className="bg-[#4897be]">
+      <main>
+        {/* Header */}
+        <header className=" py-6 px-6 md:px-20 flex justify-between items-center">
+          <div>
+            <h1 className="text-2xl md:text-3xl font-bold text-white">
+              Toronto Model United Nations
+            </h1>
+            <p className="text-white">Branding Outline</p>
+          </div>
+          <p className="text-sm text-white">Sophie Shu</p>
+        </header>
+
+        {/* Intro */}
+        <section className="px-6 md:px-20 py-10 space-y-6">
+          <img
+            src="/1-forest.png"
+            alt="Lanyard and Name Card"
+            className="rounded-xl shadow-lg w-full"
+          />
+          <p className="text-gray-700 leading-relaxed">
+            As Media Secretariat for Toronto Model United Nations 2025, I was
+            responsible for establishing the brand image by designing signs,
+            prints, and other conference materials, impacting over 600 delegates
+            and staff members.
+          </p>
+
+          <div className="flex gap-3 flex-wrap">
+            <span className=" text-white px-4 py-1 rounded-full text-sm font-medium">
+              Design
+            </span>
+            <span className=" text-white px-4 py-1 rounded-full text-sm font-medium">
+              Marketing
+            </span>
+            <span className=" text-white px-4 py-1 rounded-full text-sm font-medium">
+              Video Editing
+            </span>
+          </div>
+        </section>
+
+        {/* Prints and Signage */}
+        <section className="px-6 md:px-20 py-10 bg-white space-y-6">
+          <h2 className="text-xl font-semibold text-white">Prints and Signage</h2>
+          <img
+            src="/1-forest.png"
+            alt="Delegate Handbook"
+            className="rounded-lg shadow-md w-full"
+          />
+          <img
+            src="/1-forest.png"
+            alt="Banner and Backdrop"
+            className="rounded-lg shadow-md w-full"
+          />
+        </section>
+
+        {/* Miscellaneous */}
+        <section className="px-6 md:px-20 py-10 space-y-6">
+          <h2 className="text-xl font-semibold text-white">Miscellaneous</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img
+              src="/1-forest.png"
+              alt="Stickers"
+              className="rounded-lg shadow-md w-full"
+            />
+            <img
+              src="/1-forest.png"
+              alt="Placemats"
+              className="rounded-lg shadow-md w-full"
+            />
+          </div>
+        </section>
+
+        {/* Statistics */}
+        <section className="px-6 md:px-20 py-10 bg-white space-y-3">
+          <h2 className="text-xl font-semibold text-white">Statistics</h2>
+          <p className="text-gray-700">
+            <strong>2000+</strong> prints
+          </p>
+          <p className="text-gray-700">
+            <strong>5723</strong> photos and videos (increase from 200 in the
+            previous iteration)
+          </p>
+        </section>
+
+        {/* Digital Marketing */}
+        <section className="px-6 md:px-20 py-10 space-y-6">
+          <h2 className="text-xl font-semibold text-white">Digital Marketing</h2>
+          <img
+            src="/1-forest.png"
+            alt="Social Media Announcements"
+            className="rounded-lg shadow-md w-full"
+          />
+        </section>
+
+        {/* Footer */}
+        <footer className=" text-white text-sm py-6 px-6 md:px-20 flex justify-between">
+          <p>2025 Design Works</p>
+          <p>Sophie Shu</p>
+        </footer>
+      </main>
+    </div>
+  );
+}
