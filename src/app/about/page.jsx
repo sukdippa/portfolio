@@ -12,7 +12,11 @@ export default function About () {
         My skills
       </div>
       <p className="">
-        -
+        Design: Figma, Adobe Creative Suite (Photoshop, Illustrator, After Effects, Premiere Pro)
+        <br />
+        Development: HTML, CSS, JavaScript, React, Next.js, Git/GitHub
+        <br />
+        Other: Photography, Videography, Motion Graphics, Branding
       </p>
     </main>
   );

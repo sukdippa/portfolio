@@ -36,7 +36,8 @@ export default function Home() {
           tag1="UX design"
           tag2="HTML/CSS"
           tag3="Motion Graphics"
-          tag4="AI/ML"
+          tag4="Frontend Development"
+          tag5="Branding"
           link='/work/luna'
         />
         <Card 
