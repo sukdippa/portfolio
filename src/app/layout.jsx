@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
           </p>
           <DarkModeToggle />
         </div>
-        <div className="flex items-end justify-end h-16 fixed bottom-0 right-4 group">
+        <div className="flex items-end justify-end h-16 fixed bottom-0 right-4 group z-50">
           <div className="h-full w-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 origin-bottom-right">
             hello
           </div>

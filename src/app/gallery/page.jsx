@@ -5,7 +5,7 @@ export default function Gallery () {
   return (
     <main className="">
       <Header title="Gallery" description="Gallery of artwork and photography, my favorite hobbies." />
-      <div className='flex flex-row'>
+      <div className='w-full flex flex-col md:flex-row justify-center'>
         <Card 
           title="Artwork" 
           description="
@@ -27,7 +27,15 @@ export default function Gallery () {
           link="/gallery/highschool"
         />
       </div>
-      <div className='flex flex-row'>
+      <div className='w-full flex flex-col md:flex-row justify-center'>
+        <Card 
+          title="Apparel Design" 
+          description="
+            Designed and illustrated apparel for ." 
+          image="/apparel/thumbnail.png"
+          tag1="Graphic Design"
+          tag2="Management"
+        />
         <Card 
           title="Photography" 
           description="
@@ -38,13 +46,23 @@ export default function Gallery () {
           tag2="Photoshop"
           tag3="Lightroom"
         />
+      </div>
+      <div className='w-full flex flex-col md:flex-row justify-center'>
         <Card 
-          title="Apparel Design" 
+          title="Music" 
           description="
-            Designed and illustrated apparel for ." 
-          image="/4-foggy.png"
-          tag1="Graphic Design"
-          tag2="Management"
+            Section under construction." 
+          image="/apparel/thumbnail.png"
+          tag1="Music Production"
+          tag2="Sound Design"
+        />
+        <Card 
+          title="Videography" 
+          description="
+            Section under construction." 
+          image="/photo/chicago.jpg"
+          tag1="Videography"
+          tag2="Premiere Pro"
         />
       </div>
     </main>

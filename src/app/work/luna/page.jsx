@@ -32,7 +32,7 @@ export default function Luna () {
           </video>
         </div>
 
-        <div className="flex flex-col justify-center items-center text-center">
+        <div className="flex flex-col justify-center items-center text-center mt-12">
           <h1>Luna AI</h1>
         </div>
         

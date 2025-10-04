@@ -6,7 +6,7 @@ export default function Work () {
   return (
     <main>
       <Header title="Design" description="My design works over the years." />
-      <div className='flex flex-row'>
+      <div className='w-full flex flex-col md:flex-row justify-center'>
         <Card 
           title="Luna AI" 
           description="
@@ -34,7 +34,7 @@ export default function Work () {
           link="/work/tmun"
         />
       </div>
-      <div className='flex flex-row'>
+      <div className='w-full flex flex-col md:flex-row justify-center'>
         <Card 
           title="Paceful: Productivity App" 
           description="

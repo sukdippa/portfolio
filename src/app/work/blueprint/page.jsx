@@ -17,11 +17,11 @@ export default function Blueprint () {
         </video>
         
         <main>
-          <div className="flex flex-col justify-center items-center text-center">
+          <div className="flex flex-col justify-center items-center text-center mt-12">
             <h1>Blueprint: Adobe Express Typography Add-on</h1>
           </div>
           
-          <div className="max-w-4xl mx-auto space-y-12 mt-12">
+          <div className="max-w-4xl mx-auto space-y-12 my-12">
             {/* Summary Section */}
             <section>
               <h2>Summary</h2>
@@ -61,6 +61,13 @@ export default function Blueprint () {
               </div>
             </section>
           </div>
+          <div className="flex flex-row gap-8">
+            <div className="max-w-4xl mx-auto">
+              <img src="/blueprint/logo-blue.png" alt="Blueprint Screenshot" className="w-full h-auto rounded-xl" />
+              <img src="/blueprint/branding.png" alt="Blueprint Screenshot" className="w-full h-auto" />
+            </div>
+          </div>
+          <img src="/blueprint/ui.png" alt="Blueprint Screenshot" className="w-96 rounded-xl mx-auto" />
         </main>
     </div>
   );
