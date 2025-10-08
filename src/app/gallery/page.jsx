@@ -31,7 +31,7 @@ export default function Gallery () {
         <Card 
           title="Apparel Design" 
           description="
-            Designed and illustrated apparel for ." 
+            Section under construction." 
           image="/apparel/thumbnail.png"
           tag1="Graphic Design"
           tag2="Management"
@@ -39,8 +39,7 @@ export default function Gallery () {
         <Card 
           title="Photography" 
           description="
-            Taking photos since elementary school. See the world through
-            a different lens." 
+            Section under construction." 
           image="/photo/chicago.jpg"
           tag1="Photography"
           tag2="Photoshop"
@@ -52,7 +51,7 @@ export default function Gallery () {
           title="Music" 
           description="
             Section under construction." 
-          image="/apparel/thumbnail.png"
+          image="/music/cover.png"
           tag1="Music Production"
           tag2="Sound Design"
         />
@@ -60,7 +59,7 @@ export default function Gallery () {
           title="Videography" 
           description="
             Section under construction." 
-          image="/photo/chicago.jpg"
+          image="/video/cover.png"
           tag1="Videography"
           tag2="Premiere Pro"
         />
