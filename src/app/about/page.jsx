@@ -50,6 +50,22 @@ export default function About () {
           <img src="/me.jpg" alt="me" />
         </div>
       </div>
+
+
+      <div className="bg-black h-[500px] mt-12 p-2">
+
+        <div className="bg-red-400 h-full w-full flex flex-col p-4 gap-4">
+          <div className='bg-blue-500 min-h-24'></div>
+          <div className='bg-green-500 flex-1 min-h-0 p-2'>
+            <div className="bg-green-700 w-full h-full overflow-auto">
+              editor content here
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
     </main>
   );
 }

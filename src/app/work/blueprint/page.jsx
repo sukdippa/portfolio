@@ -8,7 +8,6 @@ export default function Blueprint () {
             className="w-full h-full object-cover"
             controls
             autoPlay 
-            muted 
             loop 
             playsInline
           >

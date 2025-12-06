@@ -23,7 +23,6 @@ export default function Luna () {
             className="w-full h-full object-cover rounded-lg"
             controls
             autoPlay 
-            muted 
             loop 
             playsInline
           >

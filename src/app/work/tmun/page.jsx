@@ -13,8 +13,8 @@ export default function Tmun () {
         <video 
             className="w-full h-full object-cover rounded-lg my-12"
             controls
+            muted
             autoPlay 
-            muted 
             loop 
             playsInline
           >
