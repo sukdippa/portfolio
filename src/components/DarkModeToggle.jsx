@@ -6,10 +6,9 @@ const DarkModeToggle = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // Check if user has a saved preference, otherwise use system preference
+    // Check if user has a saved preference, otherwise default to false (light mode)
     const saved = localStorage.getItem('darkMode');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const shouldBeDark = saved ? saved === 'true' : systemPrefersDark;
+    const shouldBeDark = saved === 'true';
     
     setIsDark(shouldBeDark);
     document.documentElement.classList.toggle('dark', shouldBeDark);

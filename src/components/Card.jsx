@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Card = ({ title, description, image, tag1, tag2, tag3, tag4, tag5, link }) => {
     return (
-        <Link className="relative group flex flex-col max-w-[40rem] w-full rounded-3xl bg-[rgba(252,252,254,0.1)] border border-border m-4 p-5 gap-4 overflow-hidden"
+        <Link className="relative group flex flex-col max-w-[40rem] w-auto md:w-full rounded-3xl bg-[rgba(252,252,254,0.1)] border border-border m-4 p-5 gap-4 overflow-hidden"
             style={{ boxShadow: "0px 45px 57px -25px rgba(83, 98, 115, 0.3)" }}
             href={link ? link : '#'}
             >

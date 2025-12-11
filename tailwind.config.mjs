@@ -12,7 +12,8 @@ export default {
         background: "var(--background)",
         text: "var(--text)",
         accent: "var(--accent)",
-        border: "var(--border)"
+        border: "var(--border)",
+        "accent-dark": "var(--accent-dark)"
       },
       fontFamily: {
         header: "var(--font-header)",
