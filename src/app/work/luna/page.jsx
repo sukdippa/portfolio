@@ -7,7 +7,7 @@ import thingAnimation from '../../../assets/thing.json';
 
 export default function Luna () {
   return (
-    <div>
+    <div className="bg-gradient-to-br from-[#FF9690] to-[#47E3EE] h-[100vh]">
       <div className="relative max-h-96 flex justify-center items-start min-h-[60vh] overflow-visible">
         {/* Lottie Animation */}
         <Lottie 

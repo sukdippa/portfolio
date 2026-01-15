@@ -5,7 +5,7 @@ import Header from '../../components/Header';
 export default function Work () {
   return (
     <main>
-      <Header title="Design" description="My design works over the years." />
+      <Header title="Work" description="My projects, from design to development." />
       <div className='w-full flex flex-col md:flex-row justify-center'>
         <Card 
           title="Luna AI" 
@@ -36,6 +36,17 @@ export default function Work () {
       </div>
       <div className='w-full flex flex-col md:flex-row justify-center'>
         <Card 
+          title="Inkline Studio" 
+          description="
+            Co-developed Inkline Studio, 
+            a text editor for writers with AI integrations." 
+          image="/inkline/cover.gif"
+          tag1="AI Integration"
+          tag2="Full Stack Development"
+          tag3="UX/UI Design"
+          link="/work/inkline"
+        />
+        <Card 
           title="Paceful: Productivity App" 
           description="
             Designed the UI/UX and motion graphics for a productivity app
@@ -46,12 +57,14 @@ export default function Work () {
           tag3="Branding"
           link="/work/paceful"
         />
+      </div>
+      <div className='w-full flex flex-col md:flex-row justify-center'>
         <Card 
           title="Blueprint: Adobe Express Typography Add-on" 
           description="
             As a submission for Adobe’s Adobe Express Add-ons Hackathon, 
             I developed an add-on which makes typography and styling more efficient." 
-          image="/blueprint/blueprint.png"
+          image="/blueprint/blueprint.gif"
           tag1="Graphic Design"
           tag2="Management"
           link="/work/blueprint"

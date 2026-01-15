@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Header from '../../components/Header';
 
-export default function About() {
+export default function Collab() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
