@@ -59,16 +59,32 @@ export default function Work () {
         />
       </div>
       <div className='w-full flex flex-col md:flex-row justify-center'>
-        <Card 
-          title="Blueprint: Adobe Express Typography Add-on" 
-          description="
-            As a submission for Adobe’s Adobe Express Add-ons Hackathon, 
-            I developed an add-on which makes typography and styling more efficient." 
-          image="/blueprint/blueprint.gif"
-          tag1="Graphic Design"
-          tag2="Management"
-          link="/work/blueprint"
-        />
+        <div className='w-full flex flex-col md:flex-row justify-center'>
+          <Card 
+            title="Fluxor: Autonomously Iterative AI UX" 
+            description="
+              For UofT hacks, we built Fluxor, an infrastructure for businesses' websites 
+              which observes user behavior, detects friction points, and automatically 
+              adjusts the interface to improve retention. This fully automates the process of A/B testing." 
+            image="/fluxor/logo.gif"
+            tag1="Graphic Design"
+            tag2="Terminal UI"
+            tag3="AI/ML"
+            link="/work/fluxor"
+          />
+        </div>
+        <div className='w-full flex flex-col md:flex-row justify-center'>
+          <Card 
+            title="Blueprint: Adobe Express Typography Add-on" 
+            description="
+              As a submission for Adobe’s Adobe Express Add-ons Hackathon, 
+              I developed an add-on which makes typography and styling more efficient." 
+            image="/blueprint/blueprint.gif"
+            tag1="Graphic Design"
+            tag2="Management"
+            link="/work/blueprint"
+          />
+        </div>
       </div>
     </main>
   );
