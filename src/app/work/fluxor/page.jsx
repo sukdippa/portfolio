@@ -25,7 +25,9 @@ export default function Fluxor () {
             <section>
               <h2>Summary</h2>
               <p>
-                For UofT hacks, we built Fluxor, an infrastructure for businesses' websites which observes user behavior, detects friction points, and automatically adjusts the interface to improve retention. This fully automates the process of A/B testing.
+                For UofT hacks, we built Fluxor, an infrastructure for businesses' websites 
+                which observes user behavior, detects friction points, and automatically 
+                adjusts the interface to improve retention. This fully automates the process of A/B testing.
               </p>
             </section>
 

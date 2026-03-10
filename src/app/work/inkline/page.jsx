@@ -4,13 +4,22 @@ import Link from 'next/link';
 export default function Blueprint () {
   return (
     <div>
-        
+        <video 
+            className="w-full h-full object-cover"
+            controls
+            autoPlay 
+            loop 
+            playsInline
+          >
+            <source src="/inkline/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
         <main>
           <div className="flex flex-col justify-center items-center text-center mt-12">
             <h1>Inkline Studio</h1>
           </div>
           
-          <div className="max-w-4xl mx-auto space-y-12 my-12">
+          <div className="max-w-4xl mx-auto space-y-12 mt-12">
             {/* Summary Section */}
             <section>
               <h2>Summary</h2>
@@ -24,9 +33,23 @@ export default function Blueprint () {
             <section>
               <h2>Big idea</h2>
               <p>
-                How can we make designers' workflows more efficient by cutting time required to repetitively style text?
+                How can we create a text editor that integrates AI tools and features to enhance the writing process, without
+                compromising the user experience or overwhelming users with AI content?
               </p>
             </section>
+
+            {/* Featured Screenshot */}
+            <section>
+              <div className="flex justify-center">
+                <img 
+                  src="/inkline/features.png" 
+                  alt="Inkline Studio Features" 
+                  className="w-full w-full h-auto rounded-lg"
+                  style={{ boxShadow: "0px 45px 57px -25px rgba(83, 98, 115, 0.3)" }}
+                />
+              </div>
+            </section>
+
 
             {/* Features Section */}
             <section>
@@ -67,8 +90,25 @@ export default function Blueprint () {
                 <p><strong>Tools used:</strong> React, Electron, Typescript, Gemini API</p>
               </div>
             </section>
-          </div>
-          <div className="flex flex-row gap-8">
+
+            {/* App Screenshots Gallery */}
+            <section>
+              <h2>App Screenshots</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <img 
+                  src="/inkline/features-minimal-interface.png" 
+                  alt="Inkline Studio Minimal Interface" 
+                  className="w-full h-auto rounded-lg"
+                  style={{ boxShadow: "0px 45px 57px -25px rgba(83, 98, 115, 0.3)" }}
+                />
+                <img 
+                  src="/inkline/features-special-editor.png" 
+                  alt="Inkline Studio Special Editors" 
+                  className="w-full h-auto rounded-lg"
+                  style={{ boxShadow: "0px 45px 57px -25px rgba(83, 98, 115, 0.3)" }}
+                />
+              </div>
+            </section>
           </div>
         </main>
     </div>

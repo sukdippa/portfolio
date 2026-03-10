@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
           {children}
           <div className="flex flex-col h-48 items-center justify-center gap-2">
             <p className="text-center text-gray-500 text-xs">
-              © 2025 Sophie Shu. All rights reserved.
+              © 2026 Sophie Shu. All rights reserved.
             </p>
           </div>
           <div className="flex items-end justify-end h-16 fixed bottom-0 right-4 group z-50">

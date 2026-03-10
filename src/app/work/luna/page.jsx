@@ -7,17 +7,19 @@ import thingAnimation from '../../../assets/thing.json';
 
 export default function Luna () {
   return (
-    <div className="bg-gradient-to-br from-[#FF9690] to-[#47E3EE] h-[100vh]">
-      <div className="relative max-h-96 flex justify-center items-start min-h-[60vh] overflow-visible">
-        {/* Lottie Animation */}
-        <Lottie 
-          animationData={thingAnimation} 
-          className="relative z-10 w-full h-auto" 
-          loop={false}
-          autoplay={true}
-        />
+    <div>
+      <div className="bg-gradient-to-br from-[#FF9690] to-[#47E3EE] pb-96">
+        <div className="relative max-h-96 flex justify-center items-start min-h-[60vh] overflow-visible">
+          {/* Lottie Animation */}
+          <Lottie 
+            animationData={thingAnimation} 
+            className="relative z-10 w-full h-auto" 
+            loop={false}
+            autoplay={true}
+          />
+        </div>
       </div>
-      <main>
+      <main className="relative -mt-96">
         <div className="bg-gradient-to-br z-20 rounded-2xl h-auto from-[#FF9690] to-[#47E3EE] p-4">
           <video 
             className="w-full h-full object-cover rounded-lg"
