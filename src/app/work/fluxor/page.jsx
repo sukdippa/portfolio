@@ -5,7 +5,7 @@ export default function Fluxor () {
   return (
     <div>
         <video 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover bg-white pt-16"
             controls
             autoPlay 
             loop 

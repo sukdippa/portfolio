@@ -4,10 +4,9 @@ import DarkModeToggle from '../../components/DarkModeToggle';
 export default function About () {
   return (
     <main className="">
-      <div className="grid grid-cols-2 gap-8 my-36">
+      <div className="flex flex-col sm:flex-row gap-8 my-36">
         <div>
-          <img src="/me.jpg" alt="me" />
-          <DarkModeToggle />
+          <img src="/me.jpg" alt="me"/>
         </div>
         <div className="space-y-6">
           <section>

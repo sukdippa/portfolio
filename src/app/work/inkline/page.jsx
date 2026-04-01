@@ -1,11 +1,12 @@
 import Header from '../../../components/Header';
 import Link from 'next/link';
+import SetNavbarColor from '@/components/SetNavbarColor';
 
 export default function Blueprint () {
   return (
     <div>
         <video 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover bg-white pt-16"
             controls
             autoPlay 
             loop 
@@ -44,7 +45,7 @@ export default function Blueprint () {
                 <img 
                   src="/inkline/features.png" 
                   alt="Inkline Studio Features" 
-                  className="w-full w-full h-auto rounded-lg"
+                  className="w-full h-auto rounded-lg"
                   style={{ boxShadow: "0px 45px 57px -25px rgba(83, 98, 115, 0.3)" }}
                 />
               </div>

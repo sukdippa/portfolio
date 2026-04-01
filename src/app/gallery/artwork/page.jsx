@@ -2,31 +2,47 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Pic from "../../../components/Pic";
-import Navbar from "../../../components/Navbar";
+import SetNavbarColor from '@/components/SetNavbarColor';
 
 export default function Artwork () {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
   useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.play();
-    }
+    const tryAutoPlay = async () => {
+      if (!audioRef.current) return;
+
+      try {
+        await audioRef.current.play();
+        setIsPlaying(true);
+      } catch {
+        // Autoplay can be blocked by browser policy until user interaction.
+        setIsPlaying(false);
+      }
+    };
+
+    tryAutoPlay();
   }, []);
 
-  const toggleMusic = () => {
+  const toggleMusic = async () => {
     if (audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
+        setIsPlaying(false);
       } else {
-        audioRef.current.play();
+        try {
+          await audioRef.current.play();
+          setIsPlaying(true);
+        } catch {
+          setIsPlaying(false);
+        }
       }
-      setIsPlaying(!isPlaying);
     }
   };
 
   return (
     <div>
+      <SetNavbarColor color="white" bgColor="[#ffffff00]"/>
       {/* Background Music */}
       <audio ref={audioRef} src="/artwork/bgm.mp3" loop />
 
@@ -64,38 +80,39 @@ export default function Artwork () {
         </div>
       </div>
       <main>
-        <div className="grid grid-cols-2 py-24 gap-12">
-          <div className="flex flex-col">
-            <div>
-              I've been drawing for a long time, working with different digital art tools to 
-              create illustrations and designs. Here are some of my favorite pieces.
-            </div>
+        <div className="py-24 gap-12">
+          <p>
+            I've been drawing for a long time, working with different digital art tools to 
+            create illustrations and designs. Here are some of my favorite pieces.
+          </p>
+        </div>
+        <div className="flex flex-col gap-8">
+          <Pic image="/artwork/tavern.jpg" text={`"Welcome to Hell's Tavern". 2023 Photoshop`} />
+          <Pic image="/artwork/pyres.png" text='"Lighter of Pyres". 2026 Blender and Photoshop' />
+          <Pic image="/artwork/civilizations.png" text='"Civilizations". 2024 Photoshop' />
+          <Pic image="/artwork/clouds.jpg" text='"Dance Amid the Clouds". 2024 Photoshop' />
+          <div className="grid grid-cols-2 gap-8">
+            <Pic image="/artwork/harvest.jpg" text='"Harvest". 2024 Photoshop' width="3000" height="4000" />
+            <Pic image="/artwork/red.png" text='"PAINT IT RED". 2025 Photoshop' width="2400" height="3300" />
           </div>
-        </div>
-        <Pic image="/artwork/tavern.jpg" text={`"Welcome to Hell's Tavern". 2023 Photoshop`} />
-        <Pic image="/artwork/civilizations.png" text='"Civilizations". 2024 Photoshop' />
-        <Pic image="/artwork/clouds.jpg" text='"Dance Amid the Clouds". 2024 Photoshop' />
-        <div className="flex flex-row gap-8">
-          <Pic image="/artwork/harvest.jpg" text='"Harvest". 2024 Photoshop' width="3000" height="4000" />
-          <Pic image="/artwork/red.png" text='"PAINT IT RED". 2025 Photoshop' width="2400" height="3300" />
-        </div>
-        <Pic image="/artwork/laundry.png" text='"Dirty Laundry". 2025 Photoshop' />
-        <Pic image="/artwork/backrooms.png" text='"Poolrooms". 2023 Photoshop' />
-        <div className="grid grid-cols-2 gap-8">
-          <Pic image="/artwork/math-door.jpg" />
-          <Pic image="/artwork/mathematics-office-door.jpg" text={`"Math door installation". 2023 Photoshop , Blender
-            The above image shows my illustration installed on my high school's math office door. I was
-            challenged to incorporate mathematical concepts within my art.`} />
-        </div>
-        <div className="flex flex-row gap-8">
-          <Pic image="/artwork/blue_chan.png" text='"Blue". 2023 Photoshop' />
-          <Pic image="/artwork/cap.png" text='"Cappie". 2024 Photoshop' />
-        </div>
-        <Pic image="/artwork/homecoming.png" text='"Homecoming". 2025 Photoshop' />
-        <Pic image="/artwork/devour.png" text='"Devour". 2023 Photoshop' />
-        <div className="flex flex-row gap-8">
-          <Pic image="/artwork/sora.png" text='"Sora". 2023 Photoshop' />
-          <Pic image="/artwork/oneway.jpg" text='"ONE WAY". 2023 Photoshop' />
+          <Pic image="/artwork/laundry.png" text='"Dirty Laundry". 2025 Photoshop' />
+          <Pic image="/artwork/backrooms.png" text='"Poolrooms". 2023 Photoshop' />
+          <div className="grid grid-cols-2 gap-8">
+            <Pic image="/artwork/math-door.jpg" />
+            <Pic image="/artwork/mathematics-office-door.jpg" text={`"Math door installation". 2023 Photoshop , Blender
+              The above image shows my illustration installed on my high school's math office door. I was
+              challenged to incorporate mathematical concepts within my art.`} />
+          </div>
+          <div className="flex flex-row gap-8">
+            <Pic image="/artwork/blue_chan.png" text='"Blue". 2023 Photoshop' />
+            <Pic image="/artwork/cap.png" text='"Cappie". 2024 Photoshop' />
+          </div>
+          <Pic image="/artwork/homecoming.png" text='"Homecoming". 2025 Photoshop' />
+          <Pic image="/artwork/devour.png" text='"Devour". 2023 Photoshop' />
+          <div className="flex flex-row gap-8">
+            <Pic image="/artwork/sora.png" text='"Sora". 2023 Photoshop' />
+            <Pic image="/artwork/oneway.jpg" text='"ONE WAY". 2023 Photoshop' />
+          </div>
         </div>
       </main>
     </div>

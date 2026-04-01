@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
-      <div className="flex flex-col max-w-[30rem] h-[24rem] justify-center items-center text-center mx-auto p-10">
+      <div className="flex flex-col mt-16 max-w-[30rem] h-[24rem] justify-center items-center text-center mx-auto p-10">
         <h1>Hi, I'm Sophie.</h1>
         <p>
           I’m a computer science student at the University of Toronto
@@ -41,16 +41,15 @@ export default function Home() {
           link='/work/luna'
         />
         <Card 
-          title="Toronto Model United Nations" 
+          title="Inkline Studio" 
           description="
-            As Media Secretariat, I designed all branding and
-            marketing materials, impacting over 600 delegates and staff.
-            I designed 15 committee posters, social media posts, and video trailers." 
-          image="/tmun/tmun.gif"
-          tag1="Graphic Design"
-          tag2="Motion Graphics"
-          tag3="Photo/Videography"
-          link="/work/tmun"
+            Co-developed Inkline Studio, 
+            a text editor for writers with AI integrations. " 
+          image="/inkline/cover.gif"
+          tag1="AI Integration"
+          tag2="Full Stack Development"
+          tag3="UX/UI Design"
+          link="/work/inkline"
         />
       </div>
     </main>

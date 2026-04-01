@@ -39,11 +39,12 @@ export default function Gallery () {
         <Card 
           title="Photography" 
           description="
-            Section under construction." 
+            Photos I took across the years." 
           image="/photo/chicago.jpg"
           tag1="Photography"
           tag2="Photoshop"
           tag3="Lightroom"
+          link="/gallery/photography"
         />
       </div>
       <div className='w-full flex flex-col md:flex-row justify-center'>

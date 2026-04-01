@@ -4,10 +4,12 @@ import Card from '../../../components/Card';
 import Lottie from 'lottie-react';
 import Link from 'next/link';
 import thingAnimation from '../../../assets/thing.json';
+import SetNavbarColor from '../../../components/SetNavbarColor';
 
 export default function Luna () {
   return (
     <div>
+      <SetNavbarColor color="white" bgColor="[#ffffff00]"/>
       <div className="bg-gradient-to-br from-[#FF9690] to-[#47E3EE] pb-96">
         <div className="relative max-h-96 flex justify-center items-start min-h-[60vh] overflow-visible">
           {/* Lottie Animation */}
