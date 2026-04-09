@@ -10,7 +10,7 @@ export default function Gallery () {
           title="Artwork" 
           description="
             Drawing since kindergarten. From scribbles to worlds." 
-          image="/artwork/tavern.jpg"
+          image="/artwork/tavern-thumbnail.jpg"
           tag1="Photoshop"
           tag2="Blender"
           link="/gallery/artwork"
@@ -55,6 +55,7 @@ export default function Gallery () {
           image="/music/cover.png"
           tag1="Music Production"
           tag2="Sound Design"
+          link="/gallery/music"
         />
         <Card 
           title="Videography" 
