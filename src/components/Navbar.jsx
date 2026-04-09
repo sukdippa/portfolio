@@ -42,7 +42,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div data-webring="ca" data-member="your-slug"></div>
+          <div data-webring="ca" data-member="sophie-shu"></div>
           <script src="https://webring.ca/embed.js" defer></script>
         </div>
       </div>
