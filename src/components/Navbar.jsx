@@ -18,10 +18,10 @@ const Navbar = () => {
   return (
     <div className="absolute top-0 left-0 w-full z-50">
       <div className={`w-full px-4 ${bgClass} ${textColorClass}`}>
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-16 items-center justify-between mx-4">
           <div className="flex items-center">
             <div className="flex flex-row space-between">
-              <div className="ml-4 flex items-baseline space-x-4">
+              <div className="flex items-baseline space-x-4">
                 <Link href="/" className="rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)] transition-[background-color] duration-300" aria-current="page">
                   Home
                 </Link>
@@ -42,6 +42,8 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+          <div data-webring="ca" data-member="your-slug"></div>
+          <script src="https://webring.ca/embed.js" defer></script>
         </div>
       </div>
     </div>
