@@ -20,6 +20,13 @@
     --border: #7e838977;
   }
 
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
   body {
     @apply font-primary bg-background text-text;
     margin: 0 auto;
