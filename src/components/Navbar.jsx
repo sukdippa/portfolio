@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useNavbarColor } from "../context/NavbarContext";
 
 const Navbar = () => {
   const { color, bgColor } = useNavbarColor();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef(null);
 
   let textColorClass = '';
   if (color === 'white') textColorClass = 'text-white';
@@ -16,6 +17,20 @@ const Navbar = () => {
   if (bgColor && bgColor !== 'default') {
     bgClass = bgColor.startsWith('bg-') ? bgColor : `bg-${bgColor}`;
   }
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+
+    const handlePointerDown = (event) => {
+      if (!mobileMenuRef.current) return;
+      if (!mobileMenuRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
+  }, [isMobileMenuOpen]);
 
   return (
     <div className="absolute top-0 left-0 w-full z-50">
@@ -47,7 +62,7 @@ const Navbar = () => {
           
             <div className="shrink-0" data-webring="ca" data-member="sophie-shu"></div>
 
-            <div className="md:hidden">
+            <div className="md:hidden" ref={mobileMenuRef}>
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen((prev) => !prev)}
