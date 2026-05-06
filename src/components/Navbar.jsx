@@ -53,9 +53,6 @@ const Navbar = () => {
               <Link href="/about" className="rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)] transition-[background-color] duration-300">
                 About
               </Link>
-              <Link href="/collab" className="rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)] transition-[background-color] duration-300">
-                Collab
-              </Link>
             </div>
           </div>
           <div className="flex flex-row justify-center items-center gap-4">
@@ -95,13 +92,6 @@ const Navbar = () => {
                   className="block rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)] transition-[background-color] duration-300"
                 >
                   About
-                </Link>
-                <Link
-                  href="/collab"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block rounded-md px-3 py-2 text-sm hover:bg-[rgba(0,0,0,0.1)] transition-[background-color] duration-300"
-                >
-                  Collab
                 </Link>
               </div>
             </div>
